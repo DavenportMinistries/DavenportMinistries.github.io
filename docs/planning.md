@@ -25,10 +25,10 @@ Tags: `[post-launch]` `[needs-design]` `[needs-decision]`
 | Feature | Status | Tags | Notes |
 |---|---|---|---|
 | Repo + GitHub Pages setup | done | | CNAME + initial commit |
-| Jekyll scaffold | planned | | Gemfile, _config.yml, index |
-| About section | planned | | Brief org description |
-| Projects section | planned | | fellowship-app.com, sdamatch.app |
-| Custom domain live | planned | | CNAME exists; needs Jekyll config |
+| Jekyll scaffold | done | | Gemfile, _config.yml, _layouts/default.html |
+| About section | done | | Single paragraph in index.html |
+| Projects section | done | | Cards: fellowship-app.com, sdamatch.app |
+| Custom domain live | done | | _config.yml wired; verify DNS on GitHub Pages settings |
 
 ### Future Additions
 
@@ -42,37 +42,7 @@ Tags: `[post-launch]` `[needs-design]` `[needs-decision]`
 
 ## Active Backlog
 
-### Jekyll Scaffold
-
-Stand up the minimum Jekyll structure so GitHub Pages renders properly:
-
-- `Gemfile` with `github-pages` gem
-- `_config.yml` with site title, description, baseurl, and url
-- `index.md` (or `index.html`) with front matter
-- Minimal `_layouts/default.html` or rely on a GitHub Pages theme
-
-Constraints: no plugins outside the GitHub Pages whitelist.
-
-### About Section
-
-One short paragraph describing Davenport Ministries LLC — what it is, what it builds, and who it serves. Keep it factual and credibility-oriented (for platform verification readers as much as general visitors).
-
-### Projects Section
-
-A list or card layout for active projects. Each entry needs:
-- Project name
-- One-line description
-- Link to the project URL
-
-Initial projects:
-- **Fellowship App** — fellowship-app.com
-- **SDA Match** — sdamatch.app
-
-Spec is intentionally open on visual treatment — start with a simple list, upgrade to cards if design warrants.
-
-### Custom Domain Wiring
-
-CNAME file exists (`davenportministries.com`). Ensure `_config.yml` sets `url: "https://davenportministries.com"` and `baseurl: ""` so Jekyll generates correct links. Verify DNS is pointed at GitHub Pages.
+Nothing in active backlog. See Future Additions in the status table for deferred items.
 
 ---
 
