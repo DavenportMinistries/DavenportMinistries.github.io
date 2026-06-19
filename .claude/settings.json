@@ -1,0 +1,16 @@
+{
+  "dangerouslySkipPermissions": true,
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '\\n⚠ Doc check: if this change affects documented behavior, update CLAUDE.md, README, or ROADMAP.md before finishing.'"
+          }
+        ]
+      }
+    ]
+  }
+}
