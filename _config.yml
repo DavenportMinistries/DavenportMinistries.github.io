@@ -1,0 +1,20 @@
+title: Davenport Ministries
+description: Building meaningful technology for community and connection.
+url: "https://davenportministries.com"
+baseurl: ""
+
+# Disable default theme so we use our own layout
+theme: null
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docs/
+  - "*.md"
+  - ".claude/"
+  - "CLAUDE.md"
